@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario - Contenido</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            &lt;Contenido&gt;
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Etiquetas de Contenido</h1>
+            <p>
+                La categoría de <strong>contenido</strong> incluye las etiquetas que muestran directamente información
+                al usuario,
+                como títulos (&lt;h1&gt; … &lt;h6&gt;), párrafos (&lt;p&gt;), saltos de línea (&lt;br&gt;) o tablas
+                (&lt;table&gt;).
+                Son las más visibles y usadas en cualquier página web, ya que permiten organizar y dar formato a textos,
+                agrupar
+                datos en filas y columnas, o dividir bloques de información. Estas etiquetas cumplen un papel
+                fundamental en la
+                presentación de la información, ya que estructuran lo que el visitante realmente ve e interpreta.
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="h1-h6">
+                <h2>&lt;h1&gt; - &lt;h6&gt;</h2>
+                <p>
+                    Representan los encabezados de la página o secciones, del más grande (&lt;h1&gt;) al más pequeño
+                    (&lt;h6&gt;).
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Jerarquizan la información y mejoran SEO.</li>
+                            <li>Solo un &lt;h1&gt; por página para el título principal.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;h1&gt;Título Principal&lt;/h1&gt;<br>
+                    &lt;h2&gt;Subtítulo&lt;/h2&gt;<br>
+                    &lt;h3&gt;Encabezado nivel 3&lt;/h3&gt;<br>
+                    &lt;h4&gt;Encabezado nivel 4&lt;/h4&gt;<br>
+                    &lt;h5&gt;Encabezado nivel 5&lt;/h5&gt;<br>
+                    &lt;h6&gt;Encabezado nivel 6&lt;/h6&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <h1>Título Principal</h1>
+                    <h2>Subtítulo</h2>
+                    <h3>Encabezado nivel 3</h3>
+                    <h4>Encabezado nivel 4</h4>
+                    <h5>Encabezado nivel 5</h5>
+                    <h6>Encabezado nivel 6</h6>
+                </div>
+            </section>
+            <hr>
+
+            <section id="p">
+                <h2>&lt;p&gt;</h2>
+                <p>
+                    Representa un párrafo de texto.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Separa bloques de texto de manera semántica.</li>
+                            <li>Se puede usar dentro de secciones o artículos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;p&gt;Este es un párrafo de ejemplo en HTML5.&lt;/p&gt;
+                </div>
+                                <p>Resultado:</p>
+                <div class="resultado">
+                    <p>Este es un párrafo de ejemplo en HTML5.</p>
+                </div>
+            </section>
+            <hr>
+
+            <section id="span">
+                <h2>&lt;span&gt;</h2>
+                <p>
+                    Texto en línea, usado para aplicar estilos o scripts a una parte del contenido.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>No genera saltos de línea.</li>
+                            <li>Se usa dentro de párrafos u otros elementos en línea.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;p&gt;Texto con un &lt;span style="color:red;"&gt;fragmento en rojo&lt;/span&gt; dentro del párrafo.&lt;/p&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <p>Texto con un <span style="color:red;">fragmento en rojo</span> dentro del párrafo.</p>
+                </div>
+            </section>
+            <hr>
+
+            <section id="br">
+                <h2>&lt;br&gt;</h2>
+                <p>
+                    Inserta un salto de línea dentro de un párrafo u otro elemento de texto.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Elemento vacío (sin cierre).</li>
+                            <li>No se debe usar para separar párrafos completos (usar &lt;p&gt; o CSS).</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;p&gt;Primera línea de texto.&lt;br&gt;Segunda línea después del salto.&lt;/p&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <p>Primera línea de texto.<br>Segunda línea después del salto.</p>
+                </div>
+            </section>
+            <hr>
+
+            <section id="hr">
+                <h2>&lt;hr&gt;</h2>
+                <p>
+                    Inserta una línea horizontal, usada como separador de contenido.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Elemento vacío.</li>
+                            <li>Separa secciones de forma visual y semántica.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, align, width, size, color (algunos obsoletos, se recomienda CSS).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;p&gt;Texto antes de la línea&lt;/p&gt;<br>
+                    &lt;hr&gt;<br>
+                    &lt;p&gt;Texto después de la línea&lt;/p&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <p>Texto antes de la línea</p><hr><p>Texto después de la línea</p>
+                </div>
+            </section>
+            <hr>
+
+            <section id="table">
+                <h2>&lt;table&gt;</h2>
+                <p>
+                    Representa una tabla de datos.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene filas &lt;tr&gt;, cabeceras &lt;th&gt; y celdas &lt;td&gt;.</li>
+                            <li>Se puede dividir en &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, border, summary, width, etc.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ana&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;20&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <table border="1">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <hr>
+
+            <section id="tr">
+                <h2>&lt;tr&gt;</h2>
+                <p>
+                    Representa una fila dentro de una tabla.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene celdas &lt;td&gt; o cabeceras &lt;th&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="td">
+                <h2>&lt;td&gt;</h2>
+                <p>
+                    Representa una celda de datos dentro de una fila de tabla (&lt;tr&gt;).
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene datos o incluso otros elementos HTML.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, colspan, rowspan, headers.</li>
+                </ul>
+                <p>Ejemplo de &lt;tr&gt; y &lt;td&gt;:</p>
+                <div class="ejemplo">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 1&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 2&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <table border="1">
+                        <tr>
+                            <td>Celda 1</td>
+                            <td>Celda 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <hr>
+
+            <section id="th">
+                <h2>&lt;th&gt;</h2>
+                <p>
+                    Representa una celda de cabecera en una tabla.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Normalmente se muestra en negrita y centrado.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, colspan, rowspan, scope.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Producto&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Precio&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <table border="1">
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <hr>
+
+            <section id="thead">
+                <h2>&lt;thead&gt;</h2>
+                <p>
+                    Agrupa las filas de cabecera de una tabla.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se coloca antes de &lt;tbody&gt; y &lt;tfoot&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="tbody">
+                <h2>&lt;tbody&gt;</h2>
+                <p>
+                    Agrupa las filas del cuerpo principal de una tabla.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene las filas de datos &lt;tr&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="tfoot">
+                <h2>&lt;tfoot&gt;</h2>
+                <p>
+                    Agrupa las filas de pie de tabla.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se coloca después de &lt;thead&gt; y &lt;tbody&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt;:</p>
+                <div class="ejemplo">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Luis&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;22&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;Fin de la tabla&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tfoot&gt;<br>
+                    &lt;/table&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Luis</td>
+                                <td>22</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Fin de la tabla</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </main>
+
+</body>
+
+</html>

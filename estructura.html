@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario - Estructura</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            &lt;Estructura&gt;
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Etiquetas de Estructura</h1>
+            <p>
+                La categoría de <strong>estructura</strong> agrupa las etiquetas fundamentales que definen la base de un
+                documento HTML.
+                Son las encargadas de establecer dónde inicia y termina la página, qué se coloca en la cabecera y qué se
+                despliega en el
+                cuerpo visible del navegador. Gracias a ellas, los navegadores pueden interpretar correctamente el
+                contenido y los motores
+                de búsqueda identificar la organización del documento. Sin estas etiquetas, una página web no podría
+                funcionar correctamente,
+                ya que controlan desde el tipo de documento (&lt;!DOCTYPE html&gt;) hasta el área visible para el
+                usuario (&lt;body&gt;).
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="doctype">
+                <h2>&lt;!DOCTYPE html&gt;</h2>
+                <p>Nombre: Declaración del tipo de documento. Indica al navegador qué versión de HTML se está
+                    utilizando.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se coloca al inicio del documento.</li>
+                            <li>No tiene cierre.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Ninguno.</li>
+                </ul>
+
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;!DOCTYPE html&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="html">
+                <h2>&lt;html&gt;</h2>
+                <p>Nombre: Raíz del documento HTML. Contiene todo el contenido del documento, incluyendo &lt;head&gt; y
+                    &lt;body&gt;.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Solo puede haber un &lt;html&gt; por documento.</li>
+                            <li>Envuelve todas las etiquetas visibles y metadatos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales como lang, dir, id, class, style, data-*.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;html lang="es"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Mi primera página&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hola mundo&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="head">
+                <h2>&lt;head&gt;</h2>
+                <p>Nombre: Cabecera del documento. Contiene metadatos, enlaces a estilos, scripts, favicons y metadatos
+                    SEO.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se coloca después de &lt;html&gt; y antes de &lt;body&gt;.</li>
+                            <li>Solo puede haber un &lt;head&gt; por documento.</li>
+                            <li>No debe contener contenido visible.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Ejemplo Head&lt;/title&gt;<br>
+                    &lt;/head&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="title">
+                <h2>&lt;title&gt;</h2>
+                <p>Nombre: Título del documento. Texto que aparece en la pestaña del navegador, importante para SEO.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Debe ir dentro de &lt;head&gt;.</li>
+                            <li>Solo puede haber un &lt;title&gt; por documento.</li>
+                            <li>No se muestra en la página.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;title&gt;Página de Ejemplo&lt;/title&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="link">
+                <h2>&lt;link&gt;</h2>
+                <p>Nombre: Enlace a recursos externos. Se utiliza principalmente para vincular hojas de estilo CSS,
+                    iconos o fuentes externas.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Debe colocarse dentro de &lt;head&gt;.</li>
+                            <li>Es un elemento vacío (no tiene cierre).</li>
+                            <li>Se utiliza para importar estilos, favicons, fuentes u otros recursos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*), href, rel, type, media.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="estilos.css"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;<br>
+                    &lt;/head&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="meta">
+                <h2>&lt;meta&gt;</h2>
+                <p>Nombre: Metadato del documento. Proporciona información adicional sobre la página web que no se
+                    muestra directamente al usuario.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Debe colocarse dentro de &lt;head&gt;.</li>
+                            <li>Es un elemento vacío (no tiene cierre).</li>
+                            <li>Se utiliza para definir la codificación, autor, descripción, palabras clave, viewport y
+                                SEO.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales (id, class, style, data-*), charset, name, content, http-equiv.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="Ejemplo de uso de meta"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;/head&gt;
+                </div>
+            </section>
+            <hr>
+
+            <section id="body">
+                <h2>&lt;body&gt;</h2>
+                <p>Nombre: Cuerpo del documento. Contiene todo el contenido visible para el usuario como textos,
+                    imágenes, enlaces, listas y multimedia.</p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Solo puede haber un &lt;body&gt; por documento.</li>
+                            <li>Se coloca después de &lt;head&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales y específicos como background, onload, onunload.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Contenido visible&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Este texto lo ve el usuario en el navegador.&lt;/p&gt;<br>
+                    &lt;/body&gt;
+                </div>
+            </section>
+            <hr>
+        </div>
+    </main>
+
+</body>
+
+</html>

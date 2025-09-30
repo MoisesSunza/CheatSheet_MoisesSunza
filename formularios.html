@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario -Formularios</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            &lt;Formularios&gt;
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Etiquetas de Formularios</h1>
+            <p>
+                Las etiquetas de <strong>formularios</strong> son las que permiten la interacción entre el usuario y la
+                página web.
+                Con ellas, se pueden introducir datos, hacer búsquedas, registrarse, enviar comentarios o cargar
+                archivos.
+                HTML ofrece gran variedad de controles como campos de texto (&lt;input&gt;), menús desplegables
+                (&lt;select&gt;),
+                botones (&lt;button&gt;), áreas de texto (&lt;textarea&gt;), casillas de verificación y más. Los
+                formularios son esenciales
+                para sitios dinámicos, ya que permiten recolectar información y enviarla al servidor, donde puede ser
+                procesada para generar
+                respuestas personalizadas o almacenar datos en bases.
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="form">
+                <h2>&lt;form&gt;</h2>
+                <p>
+                    Representa un formulario HTML que permite a los usuarios enviar datos al servidor.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene controles como &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; y botones.</li>
+                            <li>Se puede enviar mediante métodos GET o POST.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, action, method, enctype, autocomplete, novalidate, target.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;form action="/procesar.php" method="post"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="nombre" name="nombre" required&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                    &lt;/form&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <form action="">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <button type="button">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <hr>
+
+            <section id="input">
+                <h2>&lt;input&gt;</h2>
+                <p>
+                    Representa un control interactivo para introducir datos.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Puede ser de tipo texto, contraseña, radio, checkbox, file, submit, entre otros.</li>
+                            <li>No tiene etiqueta de cierre.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, type, name, value, placeholder, required, readonly, disabled, maxlength,
+                        minlength.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;input type="text" name="usuario" placeholder="Nombre de usuario"&gt;<br>
+                    &lt;input type="password" name="clave" placeholder="Contraseña"&gt;<br>
+                    &lt;input type="checkbox" name="suscribir"&gt; Suscribirse<br>
+                    &lt;input type="radio" name="genero" value="M"&gt; Masculino<br>
+                    &lt;input type="radio" name="genero" value="F"&gt; Femenino<br>
+                    &lt;input type="file" name="archivo"&gt;<br>
+                    &lt;input type="submit" value="Enviar"&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <input type="text" name="usuario" placeholder="Nombre de usuario">
+                    <input type="password" name="clave" placeholder="Contraseña">
+                    <input type="checkbox" name="suscribir"> Suscribirse
+                    <input type="radio" name="genero" value="M"> Masculino
+                    <input type="radio" name="genero" value="F"> Femenino
+                    <input type="file" name="archivo">
+                    <input type="submit" value="Enviar">
+                </div>
+            </section>
+            <hr>
+
+            <section id="select">
+                <h2>&lt;select&gt;</h2>
+                <p>
+                    Representa un menú desplegable que permite seleccionar una o varias opciones.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene elementos &lt;option&gt;.</li>
+                            <li>Puede permitir selección múltiple usando el atributo multiple.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, name, size, multiple, required, disabled.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="option">
+                <h2>&lt;option&gt;</h2>
+                <p>
+                    Representa una opción dentro de un &lt;select&gt;.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede seleccionar individualmente o formar parte de un grupo de opciones.</li>
+                            <li>Se puede marcar como seleccionada por defecto con selected.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, value, selected, disabled, label.</li>
+                </ul>
+                <p>Ejemplo &lt;select&gt; y &lt;option&gt;:</p>
+                <div class="ejemplo">
+                    &lt;label for="pais"&gt;País:&lt;/label&gt;<br>
+                    &lt;select id="pais" name="pais"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="mx" selected&gt;México&lt;/option&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ar"&gt;Argentina&lt;/option&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="es"&gt;España&lt;/option&gt;<br>
+                    &lt;/select&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="mx" selected>México</option>
+                        <option value="ar">Argentina</option>
+                        <option value="es">España</option>
+                    </select>
+                </div>
+            </section>
+            <hr>
+
+            <section id="textarea">
+                <h2>&lt;textarea&gt;</h2>
+                <p>
+                    Representa un campo de texto multilinea donde el usuario puede escribir varias líneas.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede controlar tamaño con rows y cols.</li>
+                            <li>Se puede establecer valor inicial dentro de la etiqueta.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, name, rows, cols, placeholder, required, readonly, disabled, maxlength,
+                        minlength.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;label for="comentario"&gt;Comentario:&lt;/label&gt;<br>
+                    &lt;textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu mensaje aquí"&gt;&lt;/textarea&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <label for="comentario">Comentario:</label>
+                    <textarea 
+                        id="comentario"
+                        name="comentario"
+                        rows="4" 
+                        cols="40" 
+                        placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+            </section>
+            <hr>
+
+            <section id="label">
+                <h2>&lt;label&gt;</h2>
+                <p>
+                    Representa la etiqueta de un control de formulario, mejorando accesibilidad y usabilidad.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede asociar a un control mediante el atributo for.</li>
+                            <li>Mejora la interacción para lectores de pantalla y clics de usuario.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, for, form.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;<br>
+                    &lt;input type="email" id="correo" name="correo" required&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+            </section>
+            <hr>
+
+            <section id="button">
+                <h2>&lt;button&gt;</h2>
+                <p>
+                    Representa un botón interactivo que puede enviar un formulario, resetearlo o ejecutar código.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede usar dentro o fuera de un formulario.</li>
+                            <li>Puede contener texto, imágenes o HTML en su interior.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, type (submit, reset, button), disabled, name, value, autofocus, form.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                    &lt;button type="reset"&gt;Reiniciar&lt;/button&gt;<br>
+                    &lt;button type="button" onclick="alert('Hola!')"&gt;Saludar&lt;/button&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reiniciar</button>
+                    <button type="button" onclick="alert('Hola!')">Saludar</button>
+                </div>
+            </section>
+            <hr>
+
+            <section id="fieldset">
+                <h2>&lt;fieldset&gt;</h2>
+                <p>
+                    Agrupa controles de un formulario de manera lógica y semántica.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se suele usar con &lt;legend&gt; para describir el grupo.</li>
+                            <li>Mejora accesibilidad y organización visual del formulario.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, disabled, form, name.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="legend">
+                <h2>&lt;legend&gt;</h2>
+                <p>
+                    Representa un título o descripción para un grupo de controles dentro de &lt;fieldset&gt;.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Debe colocarse como primer hijo dentro de &lt;fieldset&gt;.</li>
+                            <li>Ayuda a identificar el propósito del grupo de campos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, accesskey, autofocus, form, hidden.</li>
+                </ul>
+                <p>Ejemplo &lt;fieldset&gt; y &lt;legend&gt;:</p>
+                <div class="ejemplo">
+                    &lt;fieldset&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Datos Personales&lt;/legend&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="nombre2"&gt;Nombre:&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="nombre2" name="nombre2"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="edad"&gt;Edad:&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" id="edad" name="edad"&gt;<br>
+                    &lt;/fieldset&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="nombre2">Nombre:</label>
+                        <input type="text" id="nombre2" name="nombre2">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad">
+                    </fieldset>
+                </div>
+            </section>
+            <hr>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

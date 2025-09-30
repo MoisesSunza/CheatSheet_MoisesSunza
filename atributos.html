@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario - Atributos</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            Atributos
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Atributos de etiquetas</h1>
+            <p>
+                Los <strong>atributos</strong> no son etiquetas en sí, sino propiedades que complementan a estas para
+                modificar su comportamiento,
+                darles significado extra o personalizarlas. Algunos son globales y se aplican a casi cualquier elemento,
+                como <em>id</em>,
+                <em>class</em> o <em>style</em>. Otros son específicos de ciertas etiquetas, como <em>src</em> en
+                &lt;img&gt;,
+                <em>href</em> en &lt;a&gt; o <em>action</em> en &lt;form&gt;. Gracias a los atributos, se pueden definir
+                enlaces, rutas de
+                recursos, tamaños, estilos visuales, validaciones de formularios y mucho más. Son una parte clave de
+                HTML porque permiten
+                adaptar cada etiqueta a las necesidades concretas del sitio.
+
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="globales">
+                <h2>Atributos Globales</h2>
+                <p>
+                    Pueden aplicarse a casi cualquier elemento HTML y modifican su comportamiento o apariencia.
+                </p>
+                <ul>
+                    <li>id: Identificador único del elemento.</li>
+                    <li>class: Clase(s) para aplicar estilos o seleccionar elementos con CSS/JS.</li>
+                    <li>style: Estilos CSS en línea.</li>
+                    <li>title: Texto que aparece al pasar el mouse sobre el elemento.</li>
+                    <li>data-*: Almacena datos personalizados accesibles mediante JavaScript.</li>
+                    <li>hidden: Oculta el elemento de la vista del usuario.</li>
+                    <li>accesskey: Tecla rápida para enfocar o activar el elemento.</li>
+                    <li>tabindex: Define el orden de tabulación del elemento.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="html-lang">
+                <h2>html: lang</h2>
+                <p>
+                    Define el idioma principal del contenido del documento.
+                </p>
+            </section>
+            <hr>
+
+            <section id="head-title-meta-link">
+                <h2>head, title, meta, link</h2>
+                <ul>
+                    <li>charset (meta): Define la codificación de caracteres (UTF-8, ISO-8859-1, etc.).</li>
+                    <li>name (meta): Nombre del metadato, por ejemplo description o viewport.</li>
+                    <li>content (meta): Valor del metadato.</li>
+                    <li>http-equiv (meta): Proporciona encabezados HTTP equivalentes.</li>
+                    <li>viewport (meta): Configura el área visible de la página en dispositivos móviles.</li>
+                    <li>rel (link): Relación del enlace con el documento (stylesheet, icon, etc.).</li>
+                    <li>href (link): URL del recurso vinculado.</li>
+                    <li>type (link): Tipo de recurso vinculado (text/css, etc.).</li>
+                    <li>media (link): Define el tipo de dispositivo (screen, print, etc.).</li>
+                    <li>crossorigin (link): Controla el envío de credenciales para recursos externos.</li>
+                    <li>integrity (link): Verifica la integridad de un recurso externo.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="table-attrs">
+                <h2>Atributos de tablas</h2>
+                <ul>
+                    <li>border (table): Define grosor del borde (obsoleto, se recomienda CSS).</li>
+                    <li>summary (table): Descripción de la tabla para lectores de pantalla.</li>
+                    <li>width (table): Ancho de la tabla (recomendado CSS).</li>
+                    <li>colspan (td, th): Número de columnas que ocupa la celda.</li>
+                    <li>rowspan (td, th): Número de filas que ocupa la celda.</li>
+                    <li>headers (td): Relaciona una celda con cabeceras (id de th).</li>
+                    <li>scope (th): Define el alcance de la celda de cabecera (col, row, colgroup, rowgroup).</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="ol-li">
+                <h2>Atributos de listas</h2>
+                <ul>
+                    <li>type (ol): Tipo de numeración (1, a, i, etc.).</li>
+                    <li>start (ol): Número inicial de la lista.</li>
+                    <li>reversed (ol): Lista en orden descendente.</li>
+                    <li>value (li): Valor numérico específico para un ítem de lista.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="form-attrs">
+                <h2>Atributos de Formularios</h2>
+                <ul>
+                    <li>action (form): URL a la que se envían los datos del formulario.</li>
+                    <li>method (form): Método de envío (GET o POST).</li>
+                    <li>enctype (form): Tipo de codificación de los datos enviados (multipart/form-data,
+                        application/x-www-form-urlencoded, text/plain).</li>
+                    <li>autocomplete (form): Activa o desactiva la autocompletación del formulario.</li>
+                    <li>novalidate (form): Indica que no se valide el formulario al enviarlo.</li>
+                    <li>target (form): Ventana o marco donde se abre el resultado.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="input-attrs">
+                <h2>Atributos de &lt;input&gt;</h2>
+                <ul>
+                    <li>type: Tipo de control (text, password, radio, checkbox, submit, file, etc.).</li>
+                    <li>name: Nombre del campo.</li>
+                    <li>value: Valor inicial o enviado del campo.</li>
+                    <li>placeholder: Texto de ayuda dentro del campo.</li>
+                    <li>required: Indica que el campo es obligatorio.</li>
+                    <li>readonly: Campo de solo lectura.</li>
+                    <li>disabled: Desactiva el campo.</li>
+                    <li>maxlength, minlength: Número máximo/mínimo de caracteres.</li>
+                    <li>autofocus: Enfoca automáticamente al cargar la página.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="textarea-attrs">
+                <h2>Atributos de &lt;textarea&gt;</h2>
+                <ul>
+                    <li>name: Nombre del campo.</li>
+                    <li>rows: Número de filas visibles.</li>
+                    <li>cols: Número de columnas visibles.</li>
+                    <li>placeholder: Texto de ayuda dentro del área de texto.</li>
+                    <li>required, readonly, disabled, maxlength, minlength: Igual que &lt;input&gt;.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="button-attrs">
+                <h2>Atributos de &lt;button&gt;</h2>
+                <ul>
+                    <li>type: submit, reset, button.</li>
+                    <li>disabled: Desactiva el botón.</li>
+                    <li>name, value: Para identificar el botón en formularios.</li>
+                    <li>autofocus: Enfoca automáticamente al cargar la página.</li>
+                    <li>form: Asocia el botón a un formulario específico.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="label-attrs">
+                <h2>Atributos de &lt;label&gt;</h2>
+                <ul>
+                    <li>for: Id del control de formulario asociado.</li>
+                    <li>form: Asocia la etiqueta a un formulario específico.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="select-option-attrs">
+                <h2>Atributos de &lt;select&gt; y &lt;option&gt;</h2>
+                <ul>
+                    <li>&lt;select&gt;: name, size, multiple, required, disabled.</li>
+                    <li>&lt;option&gt;: value, selected, disabled, label.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="fieldset-legend-attrs">
+                <h2>Atributos de &lt;fieldset&gt; y &lt;legend&gt;</h2>
+                <ul>
+                    <li>&lt;fieldset&gt;: disabled, form, name.</li>
+                    <li>&lt;legend&gt;: accesskey, autofocus, form, hidden.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="img-attrs">
+                <h2>Atributos de &lt;img&gt;</h2>
+                <ul>
+                    <li>src: URL de la imagen.</li>
+                    <li>alt: Texto alternativo.</li>
+                    <li>width, height: Dimensiones.</li>
+                    <li>crossorigin: Control de credenciales para imágenes externas.</li>
+                    <li>usemap: Mapa de imagen.</li>
+                    <li>longdesc: URL de descripción detallada.</li>
+                    <li>loading: lazy o eager (carga diferida).</li>
+                    <li>referrerpolicy: Política de referencia HTTP.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section id="audio-video-source-attrs">
+                <h2>Atributos de &lt;audio&gt;, &lt;video&gt; y &lt;source&gt;</h2>
+                <ul>
+                    <li>&lt;audio&gt;: src, controls, autoplay, loop, muted, preload.</li>
+                    <li>&lt;video&gt;: src, controls, autoplay, loop, muted, preload, poster, width, height.</li>
+                    <li>&lt;source&gt;: src, type, media.</li>
+                </ul>
+            </section>
+            <hr>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

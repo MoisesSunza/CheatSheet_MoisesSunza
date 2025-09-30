@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario - Multimedia</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            &lt;Multimedia&gt;
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Etiquetas de Multimedia</h1>
+            <p>
+                La categoría de <strong>multimedia</strong> abarca etiquetas que enriquecen la experiencia del usuario
+                integrando imágenes,
+                audio y video de manera nativa, sin necesidad de complementos externos como Flash. Gracias a ellas, una
+                página puede mostrar
+                contenido más interactivo y atractivo, como música (&lt;audio&gt;), películas o animaciones
+                (&lt;video&gt;), podcasts o
+                galerías de fotos (&lt;img&gt;). Estas etiquetas también incluyen atributos para controlar la
+                reproducción automática, la
+                carga diferida, los subtítulos y la accesibilidad, permitiendo un uso más inclusivo y adaptable en
+                distintos dispositivos,
+                desde computadoras hasta móviles.
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="img">
+                <h2>&lt;img&gt;</h2>
+                <p>
+                    Representa una imagen en la página web.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Elemento vacío (sin cierre).</li>
+                            <li>Se usa para mostrar imágenes estáticas en diversos formatos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, src, alt, width, height, crossorigin, usemap, longdesc, loading,
+                        referrerpolicy.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <img src="https://moisessunza.github.io/CheatSheet_MoisesSunza/imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+                </div>
+            </section>
+            <hr>
+
+            <section id="audio">
+                <h2>&lt;audio&gt;</h2>
+                <p>
+                    Permite incrustar contenido de audio reproducible en la página.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede controlar con atributos como controls, autoplay, loop y muted.</li>
+                            <li>Puede contener uno o más elementos &lt;source&gt; para distintos formatos.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, src, controls, autoplay, loop, muted, preload.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;audio controls&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Tu navegador no soporta audio HTML5.<br>
+                    &lt;/audio&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <audio controls>
+                        <source src="https://moisessunza.github.io/CheatSheet_MoisesSunza/audio.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+            </section>
+            <hr>
+
+            <section id="video">
+                <h2>&lt;video&gt;</h2>
+                <p>
+                    Permite incrustar contenido de video reproducible en la página.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se puede controlar con atributos como controls, autoplay, loop, muted y poster.</li>
+                            <li>Puede contener uno o más elementos &lt;source&gt; para distintos formatos de video.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, src, controls, autoplay, loop, muted, preload, poster, width, height.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;video width="320" height="240" controls poster="poster.jpg"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Tu navegador no soporta video HTML5.<br>
+                    &lt;/video&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <video width="320" height="240" controls poster="poster.jpg">
+                        <source src="https://moisessunza.github.io/CheatSheet_MoisesSunza/video.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+            </section>
+            <hr>
+
+            <section id="source">
+                <h2>&lt;source&gt;</h2>
+                <p>
+                    Define un recurso multimedia alternativo para elementos de audio o video.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se usa dentro de &lt;audio&gt; o &lt;video&gt; para indicar diferentes formatos.</li>
+                            <li>No se utiliza solo; siempre debe estar dentro de un contenedor multimedia.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, src, type, media.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;audio controls&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                    &lt;/audio&gt;<br>
+                    <br>
+                    &lt;video controls&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                    &lt;/video&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <audio controls>
+                        <source src="https://moisessunza.github.io/CheatSheet_MoisesSunza/audio.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <video controls width="320" height="240">
+                        <source src="https://moisessunza.github.io/CheatSheet_MoisesSunza/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </main>
+
+</body>
+
+</html>

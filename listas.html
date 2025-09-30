@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://moisessunza.github.io/CheatSheet_MoisesSunza/main.css">
+    <title>Glosario - Listas</title>
+</head>
+
+<body>
+    <nav class="barPrin">
+        <ul class="barra">
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/">
+                    Página Principal
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/estructura">
+                    &lt;Estructura&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/semantica">
+                    &lt;Semántica&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/contenido">
+                    &lt;Contenido&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/listas">
+                    &lt;Listas&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/formularios">
+                    &lt;Formularios&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/multimedia">
+                    &lt;Multimedia&gt;
+                </a>
+            </li>
+
+            <li>
+                <a href="https://moisessunza.github.io/CheatSheet_MoisesSunza/atributos">Atributos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pagTitulo">
+        <h1>
+            &lt;Listas&gt;
+        </h1>
+    </header>
+
+    <main class="cuerpo">
+        <div class="descripcion">
+            <h1>Etiquetas de Listas</h1>
+            <p>
+                Las <strong>listas</strong> son un recurso esencial para organizar información de manera jerárquica o
+                secuencial.
+                HTML permite tres tipos principales: listas ordenadas (&lt;ol&gt;) con numeración automática, listas
+                desordenadas (&lt;ul&gt;)
+                con viñetas, y listas de definición (&lt;dl&gt;) que sirven para glosarios o pares de
+                término-definición. Además, estas
+                etiquetas se combinan con &lt;li&gt; (elementos de lista) o &lt;dt&gt; y &lt;dd&gt; en el caso de las
+                listas de definición.
+                Son muy usadas en menús, pasos de instrucciones, catálogos y documentos que necesitan una organización
+                clara.
+            </p>
+        </div>
+
+        <div class="cont">
+            <section id="ol">
+                <h2>&lt;ol&gt;</h2>
+                <p>
+                    Representa una lista ordenada, normalmente numerada.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se usa para pasos o secuencias.</li>
+                            <li>Contiene elementos &lt;li&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, type, start, reversed.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;ol type="1" start="3"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Paso uno&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Paso dos&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Paso tres&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <ol type="1" start="1">
+                        <li>Paso uno</li>
+                        <li>Paso dos</li>
+                        <li>Paso tres</li>
+                    </ol>
+                </div>
+            </section>
+            <hr>
+
+            <section id="ul">
+                <h2>&lt;ul&gt;</h2>
+                <p>
+                    Representa una lista desordenada, normalmente con viñetas.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se usa para agrupar elementos sin orden.</li>
+                            <li>Contiene elementos &lt;li&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Manzana&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Banana&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Naranja&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <ul>
+                        <li>Manzana</li>
+                        <li>Banana</li>
+                        <li>Naranja</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+
+            <section id="li">
+                <h2>&lt;li&gt;</h2>
+                <p>
+                    Representa un elemento dentro de una lista ordenada (&lt;ol&gt;) o desordenada (&lt;ul&gt;).
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene texto o incluso otras listas.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales, value (para &lt;ol&gt;).</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;ol&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li value="10"&gt;Elemento con valor 10&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elemento normal&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <ol>
+                        <li value="10">Elemento con valor 10</li>
+                        <li>Elemento normal</li>
+                    </ol>
+                </div>
+            </section>
+            <hr>
+
+            <section id="dl">
+                <h2>&lt;dl&gt;</h2>
+                <p>
+                    Representa una lista de definiciones, donde se relacionan términos con descripciones.
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Contiene pares de &lt;dt&gt; y &lt;dd&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;dl&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Lenguaje de marcado para estructurar páginas web.&lt;/dd&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Lenguaje de estilos para dar diseño a páginas web.&lt;/dd&gt;<br>
+                    &lt;/dl&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+                        <dt>CSS</dt>
+                        <dd>Lenguaje de estilos para dar diseño a páginas web.</dd>
+                    </dl>
+                </div>
+            </section>
+            <hr>
+
+            <section id="dt">
+                <h2>&lt;dt&gt;</h2>
+                <p>
+                    Representa el término dentro de una lista de definiciones (&lt;dl&gt;).
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Se combina con &lt;dd&gt; para definir la descripción.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;dl&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;CPU&lt;/dt&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Unidad central de procesamiento, el cerebro del computador.&lt;/dd&gt;<br>
+                    &lt;/dl&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <dl>
+                        <dt>CPU</dt>
+                        <dd>Unidad central de procesamiento, el cerebro del computador.</dd>
+                    </dl>
+                </div>
+            </section>
+            <hr>
+
+            <section id="dd">
+                <h2>&lt;dd&gt;</h2>
+                <p>
+                    Representa la descripción de un término dentro de una lista de definiciones (&lt;dl&gt;).
+                </p>
+                <ul>
+                    <li>Características:
+                        <ul>
+                            <li>Debe seguir a un &lt;dt&gt;.</li>
+                        </ul>
+                    </li>
+                    <li>Atributos: Globales.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <div class="ejemplo">
+                    &lt;dl&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;RAM&lt;/dt&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Memoria de acceso aleatorio, usada para almacenar datos temporales.&lt;/dd&gt;<br>
+                    &lt;/dl&gt;
+                </div>
+                <p>Resultado:</p>
+                <div class="resultado">
+                    <dl>
+                        <dt>RAM</dt>
+                        <dd>Memoria de acceso aleatorio, usada para almacenar datos temporales.</dd>
+                    </dl>
+                </div>
+            </section>
+            <hr>
+
+    </main>
+
+</body>
+
+</html>
